@@ -1,0 +1,34 @@
+.language-selector {
+  margin: 20px;
+  width: 200px;
+}
+
+.modal-box {
+  background: white;
+  padding: 20px;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.verify-button,
+.send-button {
+  margin-top: 10px;
+}
+
+.close-icon {
+  cursor: pointer;
+}

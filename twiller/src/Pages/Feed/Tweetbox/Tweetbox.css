@@ -1,0 +1,665 @@
+.tweetBox {
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--twitter-background);
+    padding-right: 10px;
+  }
+  
+  .tweetBox>form {
+    display: flex;
+    flex-direction: column;
+  }
+  .tweetBoxContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tweetBox {
+  width: 70%; /* Adjust width of the tweet input section */
+  margin-right: 10px;
+}
+/* General container for the RightPanel */
+.right-panel {
+  width: 25%;
+  min-width: 300px;
+  padding: 16px;
+}
+
+/* The main box container with shadow, border, and rounded corners */
+.right-panel-box {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #f7f7f7;
+  border-radius: 50px;
+  outline: none;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-left: 8px;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-bar .search-icon {
+  font-size: 20px;
+  color: #999;
+}
+
+/* Suggested Users Section */
+.suggested-users {
+  padding: 16px;
+  background-color: #f7f7f7;
+  border-radius: 16px;
+  margin-top: 16px;
+}
+
+.suggested-users h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.suggested-users .empty-state {
+  font-size: 14px;
+  color: #888;
+}
+
+.suggested-users .user-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.suggested-users .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.suggested-users .user-info .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.suggested-users .user-info .user-details {
+  margin-left: 8px;
+}
+
+.suggested-users .user-info .user-details h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.suggested-users .user-info .user-details p {
+  font-size: 12px;
+  color: #888;
+}
+
+.suggested-users .buttons {
+  display: flex;
+  align-items: center;
+}
+
+.suggested-users .buttons .profile-btn,
+.suggested-users .buttons .follow-btn {
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.suggested-users .buttons .profile-btn {
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.suggested-users .buttons .profile-btn:hover {
+  background-color: #444;
+}
+
+.suggested-users .buttons .follow-btn {
+  background-color: #d1d1d1;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.suggested-users .buttons .follow-btn.following {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.suggested-users .buttons .follow-btn:hover {
+  background-color: #888;
+}
+
+.userCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.userCard img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userInfo {
+  flex-grow: 1;
+}
+
+.userInfo p {
+  margin: 0;
+  font-weight: bold;
+}
+
+button {
+  padding: 5px 10px;
+  border: 1px solid #1da1f2;
+  background-color: #fff;
+  color: #1da1f2;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+
+.userCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+}
+
+.userCard img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.userCard .userInfo {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.userCard button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.userCard button:hover {
+  background-color: #0d8bf2;
+}
+
+  .tweetBox__input {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tweetBox__input>input {
+    flex: 1;
+    margin-left: 15px;
+    font-size: 20px;
+    border: none;
+    margin-top: 0px;
+  }
+  .tweetBox {
+    padding: 10px;
+    border-bottom: 1px solid #e6ecf0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tweetBox__input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .tweetBox__input > input {
+    margin-left: 10px;
+    flex: 1;
+    font-size: 18px;
+    border: none;
+    outline: none;
+  }
+  .emailOtpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .emailOtpForm input {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .emailOtpForm button {
+    width: 90%;
+    padding: 10px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .emailOtpForm button:hover {
+    background-color: #0d8bf2;
+  }
+  
+  .imageIcon_tweetButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Style for the tweet box container */
+.tweetBox {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: 20px auto;
+}
+
+/* Style for the input section inside the tweet box */
+.tweetBox__input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tweetBox__input input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/* Style for the buttons and icons */
+.imageIcon_tweetButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.imageIcon_tweetButton .imageIcon {
+  display: flex;
+  align-items: center;
+}
+
+.imageIcon_tweetButton input[type="file"] {
+  display: none;
+}
+.videoIcon{
+  cursor: pointer;
+  color: #1da1f2;
+  display: flex;
+  align-items: center;
+}
+.tweetBox__tweetButton {
+  background-color: #1da1f2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tweetBox__tweetButton:hover {
+  background-color: #1a91d0;
+}
+
+/* Style for the email form */
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f8fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.emailForm input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.emailForm button {
+  background-color: #1da1f2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.emailForm button:hover {
+  background-color: #1a91d0;
+}
+
+/* Style for the OTP form */
+.otpForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.otpForm button {
+  background-color: #1da1f2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.otpForm button:hover {
+  background-color: #1a91d0;
+}
+
+/* Toast notification style */
+.Toastify__toast {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.Toastify__toast--error {
+  background-color: #f44336;
+  color: white;
+}
+/* TweetBox.css */
+
+/* Main TweetBox Container */
+.tweetBox {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  border: 1px solid #e6ecf0;
+}
+
+.tweetBox__input {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.tweetBox__input textarea {
+  width: 100%;
+  height: 80px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: 1px solid #e6ecf0;
+  border-radius: 8px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.tweetBox__input textarea:focus {
+  border-color: #1da1f2;
+}
+
+/* Media Buttons */
+.media-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.media-buttons svg {
+  font-size: 24px;
+  cursor: pointer;
+  color: #1da1f2;
+  transition: color 0.3s ease;
+}
+
+.media-buttons svg:hover {
+  color: #0c7abf;
+}
+
+/* Media Preview */
+.media-preview {
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-preview img,
+.media-preview video,
+.media-preview audio {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e6ecf0;
+}
+
+.media-preview audio {
+  width: 100%;
+}
+
+.media-preview .IoCloseSharp {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #ff4d4f;
+  font-size: 20px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+.media-preview .IoCloseSharp:hover {
+  color: #d63031;
+}
+
+/* Post Button */
+button[type="submit"] {
+  background-color: #1da1f2 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  text-transform: capitalize !important;
+  border-radius: 50px !important;
+  padding: 8px 20px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+button[type="submit"]:hover {
+  background-color: #0c7abf !important;
+}
+
+/* Email Verification Modal */
+.email-verification {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f7f9fa;
+  border: 1px solid #e6ecf0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.email-verification h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.email-verification input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #e6ecf0;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.email-verification input:focus {
+  border-color: #1da1f2;
+}
+
+.email-verification button {
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-verification button:hover {
+  background-color: #0c7abf;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tweetBox {
+    width: 95%;
+  }
+
+  .tweetBox__input textarea {
+    font-size: 14px;
+    height: 60px;
+  }
+
+  .media-buttons svg {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .media-buttons {
+    gap: 10px;
+  }
+
+  button[type="submit"] {
+    padding: 6px 12px !important;
+    font-size: 14px !important;
+  }
+}
+
+  .imageInput {
+    display: none;
+  }
+  
+  .imageIcon {
+    cursor: pointer;
+    color: #1da1f2;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tweetBox__tweetButton {
+    background-color: #1da1f2 !important;
+    color: white !important;
+    font-weight: bold !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+  }
+  
+  .tweetBox__imageInput {
+    border: none;
+    padding: 5px 20px;
+  }
+  
+  .imageIcon_tweetButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tweetBox__tweetButton {
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 700 !important;
+    text-transform: inherit !important;
+    border-radius: 50px !important;
+    width: 100px;
+    height: 40px !important;
+  }
+  
+  .imageIcon {
+    color: var(--twitter-color);
+    padding-left: 25px;
+  }
+  
+  .imageInput {
+    display: none;
+  }

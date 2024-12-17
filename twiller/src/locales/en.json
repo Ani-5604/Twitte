@@ -1,0 +1,17 @@
+{
+    "welcome": "Welcome",
+    "home": "Home",
+    "profile": "Profile",
+    "tweet": "Tweet",  "Edit": "Edit",
+    "Edit_Profile": "Edit Profile",
+    "Save": "Save",
+    "Name": "Name",
+    "Bio": "Bio",
+    "Location": "Location",
+    "Website": "Website",
+    "Birth_Date": "Birth Date",
+    "Switch_to_Professional": "Switch to Professional",
+    "Cancel": "Cancel",
+    "Enter_age_warning": "This can only be changed a few times. Make sure you enter the age of the person using the account."
+  }
+  
